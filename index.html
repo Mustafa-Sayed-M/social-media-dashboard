@@ -1,0 +1,271 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <meta name="description" content="">
+  
+  <title>Social Media Dashboard</title>
+  
+  <!-- Font Awesome Css File -->
+  <link rel="stylesheet" href="css/all.min.css">
+  <!-- Style Css File -->
+  <link rel="stylesheet" href="css/style.css">
+  <!-- Bootstrap Css File -->
+  <link rel="stylesheet" href="css/bootstrap.min.css">
+
+</head>
+<body>
+  <!-- Start App -->
+  <div class="app light-mode">
+    <div class="container">
+      <!-- Header -->
+      <div class="header">
+        <div class="title-page">
+          <h3>Social Media Dashboard</h3>
+          <p>Total Followers: 23,004</p>
+        </div>
+        <button onclick="toggleMode()" type="button" class="btn-change-theme">
+          <span class="text">
+            Dark Mode
+          </span>
+          <div class="icon">
+            <div class="circle"></div>
+          </div>
+        </button>
+      </div>
+      <!-- Social Cards -->
+      <div class="social-cards">
+        <div class="social-card facebook-card">
+          <div class="social-name">
+            <img src="images/icon-facebook.svg" alt="Icon Facebook">
+            <span> @nathanf</span>
+          </div>
+          <div class="social-followers">
+            <h1 class="count-followers">1987</h1>
+            <span>Followers</span>
+          </div>
+          <div class="social-increased-today">
+            <i class="fa-solid fa-sort-up fa-fw"></i>
+            <span class="count-today">12</span>
+            <span>Today</span>
+          </div>
+        </div>
+        <div class="social-card twitter-card">
+          <div class="social-name">
+            <img src="images/icon-twitter.svg" alt="Icon Twitter">
+            <span> @nathanf</span>
+          </div>
+          <div class="social-followers">
+            <h1 class="count-followers">1044</h1>
+            <span>Followers</span>
+          </div>
+          <div class="social-increased-today">
+            <i class="fa-solid fa-sort-up fa-fw"></i>
+            <span class="count-today">99</span>
+            <span>Today</span>
+          </div>
+        </div>
+        <div class="social-card instagram-card">
+          <div class="social-name">
+            <img src="images/icon-instagram.svg" alt="Icon Facebook">
+            <span> @realnathanf</span>
+          </div>
+          <div class="social-followers">
+            <h1 class="count-followers">11K</h1>
+            <span>Followers</span>
+          </div>
+          <div class="social-increased-today">
+            <i class="fa-solid fa-sort-up fa-fw"></i>
+            <span class="count-today">1099</span>
+            <span>Today</span>
+          </div>
+        </div>
+        <div class="social-card youtube-card">
+          <div class="social-name">
+            <img src="images/icon-youtube.svg" alt="Icon Facebook">
+            <span> @Nathan F.</span>
+          </div>
+          <div class="social-followers">
+            <h1 class="count-followers">1987</h1>
+            <span>Subscribe</span>
+          </div>
+          <div class="social-increased-today down">
+            <i class="fa-solid fa-caret-down"></i>
+            <span class="count-today">144</span>
+            <span>Today</span>
+          </div>
+        </div>
+      </div>
+      <!-- Overview Today -->
+      <div class="overview-today">
+        <div class="title">
+          <h4>Overview Today</h4>
+        </div>
+        <div class="overview-wrapper">
+          <div class="overview-cards">
+            <div class="overview-card">
+              <div class="head">
+                <div class="text">
+                  Page Views
+                </div>
+                <div class="icon">
+                  <img src="images/icon-facebook.svg" alt="Facebook Icon">
+                </div>
+              </div>
+              <div class="body">
+                <div class="count-number">
+                  87
+                </div>
+                <div class="percentage">
+                  <i class="fa-solid fa-sort-up"></i>
+                  <span class="percentage-number">3%</span>
+                </div>
+              </div>
+            </div>
+            <div class="overview-card">
+              <div class="head">
+                <div class="text">
+                  Likes
+                </div>
+                <div class="icon">
+                  <img src="images/icon-facebook.svg" alt="Facebook Icon">
+                </div>
+              </div>
+              <div class="body">
+                <div class="count-number">
+                  52
+                </div>
+                <div class="percentage down">
+                  <i class="fa-solid fa-caret-down"></i>
+                  <span class="percentage-number">2%</span>
+                </div>
+              </div>
+            </div>
+            <div class="overview-card">
+              <div class="head">
+                <div class="text">
+                  Likes
+                </div>
+                <div class="icon">
+                  <img src="images/icon-instagram.svg" alt="Instagram Icon">
+                </div>
+              </div>
+              <div class="body">
+                <div class="count-number">
+                  5462
+                </div>
+                <div class="percentage">
+                  <i class="fa-solid fa-sort-up"></i>
+                  <span class="percentage-number">2257%</span>
+                </div>
+              </div>
+            </div>
+            <div class="overview-card">
+              <div class="head">
+                <div class="text">
+                  Profile Views
+                </div>
+                <div class="icon">
+                  <img src="images/icon-instagram.svg" alt="Instagram Icon">
+                </div>
+              </div>
+              <div class="body">
+                <div class="count-number">
+                  52K
+                </div>
+                <div class="percentage">
+                  <i class="fa-solid fa-sort-up"></i>
+                  <span class="percentage-number">1375%</span>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="overview-cards">
+            <div class="overview-card">
+              <div class="head">
+                <div class="text">
+                  Retweets
+                </div>
+                <div class="icon">
+                  <img src="images/icon-twitter.svg" alt="Twitter Icon">
+                </div>
+              </div>
+              <div class="body">
+                <div class="count-number">
+                  117
+                </div>
+                <div class="percentage">
+                  <i class="fa-solid fa-sort-up"></i>
+                  <span class="percentage-number">303%</span>
+                </div>
+              </div>
+            </div>
+            <div class="overview-card">
+              <div class="head">
+                <div class="text">
+                  Likes
+                </div>
+                <div class="icon">
+                  <img src="images/icon-twitter.svg" alt="Twitter Icon">
+                </div>
+              </div>
+              <div class="body">
+                <div class="count-number">
+                  507
+                </div>
+                <div class="percentage">
+                  <i class="fa-solid fa-sort-up"></i>
+                  <span class="percentage-number">553%</span>
+                </div>
+              </div>
+            </div>
+            <div class="overview-card">
+              <div class="head">
+                <div class="text">
+                  Likes
+                </div>
+                <div class="icon">
+                  <img src="images/icon-youtube.svg" alt="Youtube Icon">
+                </div>
+              </div>
+              <div class="body">
+                <div class="count-number">
+                  107
+                </div>
+                <div class="percentage down">
+                  <i class="fa-solid fa-caret-down"></i>
+                  <span class="percentage-number">19%</span>
+                </div>
+              </div>
+            </div>
+            <div class="overview-card">
+              <div class="head">
+                <div class="text">
+                  Total Views
+                </div>
+                <div class="icon">
+                  <img src="images/icon-youtube.svg" alt="Youtube Icon">
+                </div>
+              </div>
+              <div class="body">
+                <div class="count-number">
+                  1407
+                </div>
+                <div class="percentage down">
+                  <i class="fa-solid fa-caret-down"></i>
+                  <span class="percentage-number">12%</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- End App -->
+  <!-- Script Js File -->
+  <script src="js/script.js"></script>
+</body>
+</html>
